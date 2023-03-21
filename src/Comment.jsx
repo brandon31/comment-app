@@ -78,6 +78,7 @@ function Comment({ username, time, comm }) {
                 type="text"
                 placeholder="Reply"
                 value={reply}
+                onChange={(e) => setReply(e.target.value)}
                 ref={discard}
               />
               <div className="options">
